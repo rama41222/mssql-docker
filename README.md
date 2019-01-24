@@ -17,7 +17,7 @@ Note: Each of these steps should be performed in the root directory.
 | Script          | Description                                     |
 | --------------- | ----------------------------------------------- |
 | `docker-compose down`   | Remove all the resources created by docker compose previously                       |
-| `docker-compose run --rm --service-ports mssql -d` | Run the application in background |
+| `docker-compose run -d --rm --service-ports mssql` | Run the application in background |
 | `docker-compose run --rm --service-ports mssql` | Run the app in foreground |
 
 ###### More on [service ports](https://docs.docker.com/compose/reference/run/)
