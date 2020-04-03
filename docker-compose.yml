@@ -5,11 +5,11 @@ services:
     image: mcr.microsoft.com/mssql/server:latest
     restart: always
     volumes:
-      - mssql-volume:/var/opt/mssql
+      - mssql-new-volume:/var/opt/mssql
     env_file:
       - .env
     ports:
       - "14330:1433"
 
 volumes:
-  mssql-volume:
+  mssql-new-volume:
